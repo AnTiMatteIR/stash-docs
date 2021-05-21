@@ -1,0 +1,32 @@
+# Project info
+site_name: stash-docs
+site_description: 'stash Documentation'
+site_author: 'AnTiMatteIR'
+site_url: https://antimatteir.github.io/stash-docs/
+
+# Repository info
+repo_name: 'AnTiMatteIR/stash-docs'
+repo_url: 'https://github.com/AnTiMatteIR/stash-docs'
+
+# Theme config
+theme:
+  name: 'material'
+  language: en
+  font: false
+  logo: img/icon.jpg
+  features:
+    - instant
+    - tabs
+
+extra_css:
+  - css/stash.css
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: 🔗
+  - pymdownx.details
+  - pymdownx.superfences
+#nav:
+    #- Home: index.md
