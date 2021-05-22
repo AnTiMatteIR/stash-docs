@@ -1,3 +1,21 @@
+---
+title: Getting Started
+summary: Describes the basics of Stash (see also README.md)
+authors:
+    - StashAppDev
+    - Leopere
+    - friendlycrab
+    - echo6ix
+    - WithoutPants
+    - InfiniteTF
+    - f1delio
+    - jeremymeyers
+    - UncleRoger33
+    - peolic
+    - bnkai
+    - AnTiMatteIR
+date: 2021-05-22
+---
 # Getting started
 ## Stash - An organizer for your porn, written in Go
 
@@ -94,27 +112,4 @@ For issues not addressed there, there are a few options:
 - Check the in-app documentation (using the `?` Icon in the top right corner)
 - Join the [Discord server][discord], where the community can offer further support.
 
-
-[stashapp]: https://stashapp.cc
-
-[sfwdemovid]: https://vimeo.com/545323354
-
-[dockerreadme]: https://github.com/stashapp/stash/blob/develop/docker/production/README.md
-[latestrelease]: https://github.com/stashapp/stash/releases/latest
-
-[macosffmpeg]: https://evermeet.cx/ffmpeg/ffmpeg-4.3.1.zip
-[macosffprobe]: https://evermeet.cx/ffmpeg/ffprobe-4.3.1.zip
-[windowsffmpeg]: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-[linuxffmpeg]: https://www.johnvansickle.com/ffmpeg/
-
-[scrapers]: scrapers.md
-[scrapersrepo]: https://github.com/stashapp/CommunityScrapers
-
-[opensslhelp]: https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl
-
-[cssthemes]: https://github.com/stashapp/stash/wiki/Themes
-[csssnippets]: https://github.com/stashapp/stash/wiki/Custom-CSS-snippets
-[csstweaks]: https://github.com/stashapp/stash/wiki/CSS-Tweaks
-
-[wiki]: https://github.com/stashapp/stash/wiki/FAQ
-[discord]: https://discord.gg/2TsNFKt
+{% include 'links.md' %}

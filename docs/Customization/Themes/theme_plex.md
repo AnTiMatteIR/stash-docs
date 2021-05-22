@@ -1,3 +1,5 @@
+# Theme: Plex
+
 &nbsp;
 <p align="center">
     <img src="https://user-images.githubusercontent.com/63812189/79496351-dddbf780-7fda-11ea-9e68-46d0eeb4e92f.png"  alt="Stash Plex Theme" />
@@ -18,7 +20,7 @@ Plex Theme will only change the look&feel of the Stash interface. It **will not*
 
 &nbsp;
 
-# Install
+## Install
 
 **1.** Open User **Interface** Configuration panel in **settings**. ( http://localhost:9999/settings?tab=interface ) 
 

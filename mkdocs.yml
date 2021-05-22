@@ -8,6 +8,9 @@ site_url: https://antimatteir.github.io/stash-docs/
 repo_name: 'AnTiMatteIR/stash-docs'
 repo_url: 'https://github.com/AnTiMatteIR/stash-docs'
 
+extra_css:
+  - css/stash.css
+
 # Theme config
 theme:
   name: 'material'
@@ -19,15 +22,42 @@ theme:
     #- navigation.tabs
     - navigation.sections
 
-extra_css:
-  - css/stash.css
+plugins:
+  - macros:
+      include_dir: include
 
-# Extensions
 markdown_extensions:
   - admonition
   - toc:
       permalink: 🔗
   - pymdownx.details
   - pymdownx.superfences
-#nav:
-    #- Home: index.md
+
+nav:
+    - Getting started: index.md
+    - Development: development.md
+    - Installation:
+      - Synology NAS: installation/synology_nas.md
+      - UNRAID: installation/unraid.md
+    - Customization:
+      - CSS Snippets: customization/css_snippets.md
+      - Themes:
+        - Overview: customization/themes/overview.md
+        - Pulsar theme: customization/themes/theme_pulsar.md
+        - Night theme: customization/themes/theme_night.md
+        - Plex theme: customization/themes/theme_plex.md
+      - Plugins & Scripts:
+        - Plugins: customization/plugins-scripts/plugins.md
+        - Scripts: customization/plugins-scripts/scripts.md
+    - Advanced:
+      - Comand line options: advanced/cli_options.md
+      - Exclude files from stash: advanced/exclude_files.md
+      - Reverse proxy: advanced/reverse_proxy.md
+    - Database:
+      - Backup & Restore: database/backup_restore.md
+      - Import CSV: database/import_csv.md
+      - Edit manually: database/edit_manually.md
+    - Troubleshooting:
+      - Video playback issues: troubleshooting/video_playback_issues.md
+    - API:
+      - Reference: api/reference.md
