@@ -61,3 +61,4 @@ nav:
       - Video playback issues: troubleshooting/video_playback_issues.md
     - API:
       - Reference: api/reference.md
+      - JSON specification: api/json_specification.md

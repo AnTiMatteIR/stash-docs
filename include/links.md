@@ -7,7 +7,7 @@
 
 
 <!-- stash extensions (scrapers, plugins, scripts, related stuff) -->
-[scrapers]: scrapers.md
+[scrapers]: https://github.com/stashapp/CommunityScrapers
 [scrapersrepo]: https://github.com/stashapp/CommunityScrapers
 
 [cssthemes]: https://github.com/stashapp/stash/wiki/Themes
