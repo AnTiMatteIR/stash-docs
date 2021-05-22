@@ -15,8 +15,9 @@ theme:
   font: false
   logo: img/icon.jpg
   features:
-    - instant
-    - tabs
+    - navigation.instant
+    #- navigation.tabs
+    - navigation.sections
 
 extra_css:
   - css/stash.css
