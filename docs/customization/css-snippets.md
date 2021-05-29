@@ -142,9 +142,9 @@ Use `order` values below 0 to move specific buttons to the left of the non-order
 and values above 1 to move them to the right of the non-ordered buttons.
 
 **Before:**  
-![image](https://user-images.githubusercontent.com/66393006/100487507-a35e3f80-3111-11eb-8cb5-a22738a50f12.png)  
+![image](/img/css-snippets-navbar-before.png)  
 **After:**  
-![image](https://user-images.githubusercontent.com/66393006/100487468-6b56fc80-3111-11eb-817b-5f14f1d7b2f8.png)  
+![image](/img/css-snippets-navbar-after.png)  
 
 ```css
 nav .navbar-nav:first-child {

@@ -35,7 +35,7 @@ Plex Theme will only change the look&feel of the Stash interface. It **will not*
 
 4,5 are optional. By default it uses the gh image links 
 
-**4.** Download **[background.png][stash-theme-plex-background-img]**  and **[noise.png][stash-theme-plex-noise-img]** 
+**4.** Download **[background.png](/img/theme-plex-background.png)**  and **[noise.png](/img/theme-plex-noise.png)** 
 
 **5.** Place `background.png` and `noise.png` in `~/.stash` on macOS / Linux or `C:\Users\YourUsername\.stash` on Windows.
 

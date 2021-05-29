@@ -17,10 +17,6 @@
 [stash-theme-plex]: https://github.com/stashapp/stash/wiki/Theme-Plex
 [stash-css-snippets]: https://github.com/stashapp/stash/wiki/Custom-CSS-snippets
 
-[stash-theme-plex-background-img]: https://user-images.githubusercontent.com/63812189/79506691-4af78900-7feb-11ea-883e-87b8e05ceb1c.png
-[stash-theme-plex-noise-img]: https://user-images.githubusercontent.com/63812189/79506696-4c28b600-7feb-11ea-8176-12a46454d87a.png
-
-
 [stash-plugin-niemands]: https://github.com/niemands/StashPlugins
 [stash-plugin-dupfinder]: https://github.com/WithoutPants/stash-plugin-duplicate-finder
 [stash-plugin-performercreator]: https://github.com/com1234475/stash-plugin-performer-creator
