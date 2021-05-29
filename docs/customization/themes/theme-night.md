@@ -10,7 +10,7 @@ date: 2021-05-28
 
 # Theme: Night
 
-![Stash Night Theme](/img/theme-night-01.png)
+![Stash Night Theme](../../img/theme-night-01.png)
 
 
 ## CSS Code

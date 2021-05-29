@@ -98,9 +98,9 @@ Once you have a certificate and key file name them `stash.crt` and `stash.key` a
 
 #### Themes and CSS customization
 
-There is a [directory of community-created themes][stash-themes] on our Wiki, along with instructions on how to install them.
+There is a [directory of community-created themes](customization/themes/overview.md) on our Wiki, along with instructions on how to install them.
 
-You can also make Stash's interface fit your desired style with [custom CSS snippets][stash-css-snippets].
+You can also make Stash's interface fit your desired style with [custom CSS snippets](customization/css-snippets.md).
 
 
 ### Support (FAQ)

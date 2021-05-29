@@ -11,10 +11,10 @@ date: 2021-05-28
 
 <!-- HTML inside Markdown sucks but there's no better way to center an image -->
 <p align="center">
-    <img src="/img/theme-plex-header.png"  alt="Stash Plex Theme" />
+    <img src="../../../img/theme-plex-header.png"  alt="Stash Plex Theme" />
 </p>
 
-![Plex Theme preview](/img/theme-plex-01.png)
+![Plex Theme preview](../../img/theme-plex-01.png)
 
 This is a community created theme for Stash inspired by popular Plex Interface. Installation is quick and easy so you should be ready to install it in just a few simple steps. 
 
@@ -35,7 +35,7 @@ Plex Theme will only change the look&feel of the Stash interface. It **will not*
 
 4,5 are optional. By default it uses the gh image links 
 
-**4.** Download **[background.png](/img/theme-plex-background.png)**  and **[noise.png](/img/theme-plex-noise.png)** 
+**4.** Download **[background.png](../../img/theme-plex-background.png)**  and **[noise.png](../../img/theme-plex-noise.png)** 
 
 **5.** Place `background.png` and `noise.png` in `~/.stash` on macOS / Linux or `C:\Users\YourUsername\.stash` on Windows.
 

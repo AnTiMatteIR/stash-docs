@@ -24,7 +24,7 @@ Configuration Option | YML | ENV | FLAG | Description | Comments
 ---------------------|:---:|:---:|:----:|-------------|:-------------:
 host | host | STASH_HOST | --host | The ip address for the host that Stash is listening to | default: 0.0.0.0
 port | port | STASH_PORT | --port | The port that Stash serves to | default: 9999 
-external host | external_host | STASH_EXTERNAL_HOST | - | Needed in some cases when you use a reverse proxy | [Wiki][stash-reverse-proxy]
+external host | external_host | STASH_EXTERNAL_HOST | - | Needed in some cases when you use a reverse proxy | [Reverse proxy](reverse-proxy.md)
 plugins path | plugins_path | - | - | The path to the Stash plugins folder | Only use if you need to override the default
 scrapers path | scrapers_path | - | - | The path to the scrapers folder | Only use if you need to override the default
 custom served folders | custom_served_folders | - | - | Allows configuration of mapped URLs to file system folders | [PR][stash-github-pr-620]

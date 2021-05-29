@@ -13,7 +13,7 @@ date: 2021-05-29
 
 The Stash Sqlite3 database file is located at `~/.stash/stash-go.sqlite`.
 
-Before making changes to the Stash sqlite3 database - **please make a [backup][stash-db-backup-restore] first!**
+Before making changes to the Stash sqlite3 database - **please make a [backup](backup-restore.md#backup) first!**
 
 You can use the `sqlite3` client to directly edit this file.
 

@@ -11,12 +11,6 @@
 [stash-scrapers]: https://github.com/stashapp/CommunityScrapers
 [stash-scrapers-repo]: https://github.com/stashapp/CommunityScrapers
 
-[stash-themes]: https://github.com/stashapp/stash/wiki/Themes
-[stash-theme-pulsar]: https://github.com/stashapp/stash/wiki/Theme-Pulsar
-[stash-theme-night]: https://github.com/stashapp/stash/wiki/Theme-Night
-[stash-theme-plex]: https://github.com/stashapp/stash/wiki/Theme-Plex
-[stash-css-snippets]: https://github.com/stashapp/stash/wiki/Custom-CSS-snippets
-
 [stash-plugin-niemands]: https://github.com/niemands/StashPlugins
 [stash-plugin-dupfinder]: https://github.com/WithoutPants/stash-plugin-duplicate-finder
 [stash-plugin-performercreator]: https://github.com/com1234475/stash-plugin-performer-creator
@@ -31,8 +25,6 @@
 [ffmpeg-linux]: https://www.johnvansickle.com/ffmpeg/
 
 [stash-install-docker]: https://github.com/stashapp/stash/blob/develop/docker/production/README.md
-
-[stash-reverse-proxy]: https://github.com/stashapp/stash/wiki/Reverse-proxy
 
 [openssl-selfsigned-help]: https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl
 
@@ -63,6 +55,3 @@
 [regex101]: https://regex101.com/?flavor=golang
 
 [gql-iterate-github]: https://github.com/efstajas/gql-iterate
-
-<!-- docs-internal -->
-[stash-db-backup-restore]: /database/backup-restore/#backup

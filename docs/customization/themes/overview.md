@@ -19,15 +19,15 @@ To Install a theme
 4. You will need to force-reload (Shift+F5) in order to see the theme.
 
 ## Creating themes
-If you would like to develop your own theme, we have a [reference guide of CSS snippets that may be useful.][stash-css-snippets]
+If you would like to develop your own theme, we have a [reference guide of CSS snippets that may be useful.](../css-snippets.md)
 
 ## Available themes
 
 | Name | Preview |
 |:---:|:---:|
-| [Pulsar][stash-theme-pulsar] | ![Screenshot of Pulsar Theme](/img/theme-pulsar.png) |
-| [Night][stash-theme-night] | ![Screenshot of Night Theme](/img/theme-night.png) |
-| [Plex][stash-theme-plex] | ![Screenshot of Plex Theme](/img/theme-plex.png) |
+| [Pulsar](theme-pulsar.md) | ![Screenshot of Pulsar Theme](../../img/theme-pulsar.png) |
+| [Night](theme-night.md) | ![Screenshot of Night Theme](../../img/theme-night.png) |
+| [Plex](theme-plex.md) | ![Screenshot of Plex Theme](../../img/theme-plex.png) |
 
 
 

@@ -37,7 +37,7 @@ exclude:
 
 and thats how it looks if you use UI (notice the difference for the `\` character)
 
-![regexUI](/img/settings-regex.png)
+![regexUI](../img/settings-regex.png)
 
 _a useful [link][regex101] to experiment with regexps (We use "Golang" as the regex flavour)_
 

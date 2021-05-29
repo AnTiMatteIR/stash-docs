@@ -10,10 +10,10 @@ date: 2021-05-28
 
 # Theme: Pulsar
 
-![Performers overview](/img/theme-pulsar-01.jpg)
-![Performer details](/img/theme-pulsar-02.jpg)
-![Scenes overview](/img/theme-pulsar-03.jpg)
-![Studios overview](/img/theme-pulsar-04.jpg)
+![Performers overview](../../img/theme-pulsar-01.jpg))
+![Performer details](../../img/theme-pulsar-02.jpg)
+![Scenes overview](../../img/theme-pulsar-03.jpg)
+![Studios overview](../../img/theme-pulsar-04.jpg)
 
 A new custom theme for Stash. Installation is quick and easy so you should be ready to install it in just a few simple steps. 
 
@@ -33,7 +33,7 @@ The Theme will only change the look & feel of the Stash interface. It will **not
 
 4. Select one of the background images that you find at the top of the CSS code by removing the commentary (`/*`) at the beginning of the line (_Aphonus_ is the standard background), or download the image as _"background.jpg"_, and place the image in `~/.stash` on macOS / Linux or `C:\Users\YourUsername\.stash` on Windows.
 
-![Background Image Preview](/img/theme-pulsar-05.jpg)
+![Background Image Preview](../../img/theme-pulsar-05.jpg)
 
 
 Enjoy!
