@@ -1,0 +1,26 @@
+:root {
+
+    /*
+    --md-default-fg-color:              hsla(204, 33%, 97%, 1);
+    --md-default-fg-color:              hsla(206, 22%, 79%, 1);
+    --md-default-fg-color--light:       rgb(255, 255, 255);
+    --md-default-bg-color:              hsla(204, 24%, 16%, 1);
+    --md-default-bg-color--light:       hsla(203, 24%, 28%, 1);
+
+    --md-primary-fg-color: hsla(204, 33%, 97%, 1);
+
+    --md-accent-fg-color: #ffffff;
+    */
+
+    --md-primary-fg-color: #374C59;
+    --md-primary-bg-color: #eff3f5;
+
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.headerlink {
+    font-size: .7em;
+}
