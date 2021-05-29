@@ -1,10 +1,29 @@
-# Custom CSS Snippets
+---
+title: Custom CSS snippets
+summary: List of useful CSS snippets to modify Stash's appearance.
+authors:
+    - WithoutPants
+    - Trizkat
+    - seducingbits
+    - cafuneandchill
+    - peolic
+    - henningBunk
+    - AnTiMatteIR
+date: 2021-05-24
+---
+
+# Custom CSS snippets
 
 **Custom CSS** allows you to modify Stash's stock style sheets.
 
 The following is a list of some useful CSS snippets. You may use them by copying-and-pasting them into the Custom CSS editor found in the `Settings` > `Interface Configuration` panel or by navigating to `127.0.0.1:9999/settings?tab=interface`
 
-Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not appear without flushing the Stash browser cache first on Chrome.
+!!! info
+    CSS tweaks usually require flushing the browser's cache or performing a "hard reload".
+    This can be achieved by holding <kbd>Shift</kbd> or <kbd>Ctrl</kbd> (depending on the browser) while reloading the page.
+
+!!! warning
+    Future releases of Stash may break some or all CSS tweaks.
 
 ## Scenes
 
@@ -15,7 +34,7 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 .grid { padding: 0px !important; }
 ```
 
-### Allow for longer string when displaying "Studio as Text" on scene thumbnails
+### Allow longer strings when displaying "Studio as Text" on scene thumbnails
 
 ```css
 .scene-studio-overlay {
@@ -164,7 +183,7 @@ div.nav-link[data-rb-event-key="/scenes/markers"] {
 
 ### Blur NSFW images
 
-Use for when working on stash but don't want to expose NSFW images and text. May not be exhaustive:
+Use for when working on Stash but don't want to expose NSFW images and text. May not be exhaustive:
 
 ```css
 .scene-card-preview-video,

@@ -1,10 +1,19 @@
+---
+title: Manually editing the Stash sqlite database
+summary: Explanation on how to manually edit the Stash database using sqlite.
+authors:
+    - victorhooi
+    - AnTiMatteIR
+date: 2021-05-29
+---
+
 # Manually editing the Stash sqlite3 database
 
 ## Location
 
 The Stash Sqlite3 database file is located at `~/.stash/stash-go.sqlite`.
 
-Before making changes to the Stash sqlite3 database - **please make a backup first!**
+Before making changes to the Stash sqlite3 database - **please make a [backup][stash-db-backup-restore] first!**
 
 You can use the `sqlite3` client to directly edit this file.
 
@@ -25,3 +34,6 @@ sqlite> DELETE FROM tags;
 ```
 
 Please note that this will not work if you have Scene market tags (TODO: What to do then?)
+
+
+{% include 'links.md' %}

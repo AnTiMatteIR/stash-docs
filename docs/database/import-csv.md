@@ -1,10 +1,20 @@
+---
+title: Import data from CSV using gql iterate
+summary: Explanation on how to import data from CSV into Stash by using gql iterate
+authors:
+    - scruffynerf
+    - meanjoep92
+    - AnTiMatteIR
+date: 2021-05-29
+---
+
 # Import data from CSV using gql iterate
 
 If you want to add a collection of performers, tags, studios, etc, and you have a text/spreadsheet list of them, here's the walkthrough of how to do it via a simple CLI method.
 
 ## **Step 1: Install this:** 
 
-[https://github.com/efstajas/gql-iterate](https://github.com/efstajas/gql-iterate)
+[https://github.com/efstajas/gql-iterate][gql-iterate-github]
 
 `npm install @efstajas/gql-iterate -g`
 
@@ -25,60 +35,64 @@ These are NOT identical to the original files found above.  Compare you'll see h
 
 ### **tags.gql:**
 
-    mutation TagCreate( 
-      $name: String!,
-      $image: String) {
-        tagCreate(input: { 
-          name: $name,  
-          image: $image 
-        }) {
-       id
-      }
-    }
+```
+mutation TagCreate( 
+  $name: String!,
+  $image: String) {
+    tagCreate(input: { 
+      name: $name,  
+      image: $image 
+    }) {
+    id
+  }
+}
+```
 
 ### **performers.gql:**
 
-    mutation PerformerCreate( 
-      $name: String!, 
-      $url: String, 
-      $gender: GenderEnum, 
-      $birthdate: String, 
-      $ethnicity: String, 
-      $country: String, 
-      $eye_color: String, 
-      $height: String, 
-      $measurements: String, 
-      $fake_tits: String, 
-      $career_length: String, 
-      $tattoos: String, 
-      $piercings: String, 
-      $aliases: String, 
-      $twitter: String, 
-      $instagram: String, 
-      $favorite: Boolean, 
-      $image: String) {
-           performerCreate(input: { 
-             name: $name, 
-             url: $url, 
-             gender: $gender, 
-             birthdate: $birthdate, 
-             ethnicity: $ethnicity, 
-             country: $country, 
-             eye_color: $eye_color, 
-             height: $height, 
-             measurements: $measurements, 
-             fake_tits: $fake_tits, 
-             career_length: $career_length, 
-             tattoos: $tattoos,
-             piercings: $piercings, 
-             aliases: $aliases, 
-             twitter: $twitter, 
-             instagram: $instagram, 
-             favorite: $favorite, 
-             image: $image }
-       ) 
-       { id } 
-     }
+```
+mutation PerformerCreate( 
+  $name: String!, 
+  $url: String, 
+  $gender: GenderEnum, 
+  $birthdate: String, 
+  $ethnicity: String, 
+  $country: String, 
+  $eye_color: String, 
+  $height: String, 
+  $measurements: String, 
+  $fake_tits: String, 
+  $career_length: String, 
+  $tattoos: String, 
+  $piercings: String, 
+  $aliases: String, 
+  $twitter: String, 
+  $instagram: String, 
+  $favorite: Boolean, 
+  $image: String) {
+        performerCreate(input: { 
+          name: $name, 
+          url: $url, 
+          gender: $gender, 
+          birthdate: $birthdate, 
+          ethnicity: $ethnicity, 
+          country: $country, 
+          eye_color: $eye_color, 
+          height: $height, 
+          measurements: $measurements, 
+          fake_tits: $fake_tits, 
+          career_length: $career_length, 
+          tattoos: $tattoos,
+          piercings: $piercings, 
+          aliases: $aliases, 
+          twitter: $twitter, 
+          instagram: $instagram, 
+          favorite: $favorite, 
+          image: $image }
+    ) 
+    { id } 
+  }
+```
 
 
 If you have a suggested change, please add it below.
@@ -94,9 +108,11 @@ If you have a spreadsheet, add a first line with the column headers, you HAVE to
 then add your data if text, or export as CSV if it's a spreadsheet
 (gender is not a string, see documentation in code, and favorite is a boolean, if you want to add those)
 
-    Alice,,,,,,blue
-    Betty,,,,,,green
-    Carter,,,,,,brown
+```
+Alice,,,,,,blue
+Betty,,,,,,green
+Carter,,,,,,brown
+```
 
 the above lines all go into a file, like performerdata.csv
 
@@ -114,3 +130,6 @@ If you're unable to get this to work, then **omit** the **favorite** and **image
 `gql-iterate --host http://_yourserverIP:portgoeshere_/graphql --input ./performerdata.csv --query ./performers.gql`
 
 It will run and add performers, it won't duplicate existing names, so you can run it multiple times if you want to add more names.  Or delete something and readd it, if need be.
+
+
+{% include 'links.md' %}

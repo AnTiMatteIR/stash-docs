@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-summary: Describes the basics of Stash (see also README.md)
+summary: Describes the basics of Stash (see also README.md).
 authors:
     - StashAppDev
     - Leopere
@@ -16,6 +16,7 @@ authors:
     - AnTiMatteIR
 date: 2021-05-22
 ---
+
 # Getting started
 ## Stash - An organizer for your porn, written in Go
 
@@ -28,19 +29,19 @@ Stash is a locally hosted web-based app written in Go which organizes and serves
 - You can tag videos and find them later.
 - It provides statistics about performers, tags, studios and other things.
 
-You can watch a [SFW demo video][sfwdemovid] to see it in action.
+You can watch a [SFW demo video][stash-demo-sfwvid] to see it in action.
 
 
-### Installing stash
+### Installing Stash
 
 #### via Docker
 
-Follow [this README.md][dockerreadme] in the docker directory.
+Follow [this README.md][stash-install-docker] in the docker directory.
 
 
 #### via pre-compiled binaries
 
-The Stash server runs on macOS, Windows, and Linux. Download the [latest release here][latestrelease].
+The Stash server runs on macOS, Windows, and Linux. Download the [latest release here][stash-release-latest].
 
 Run the executable (double click the exe on windows or run `./stash-osx`, or `./stash-linux` respectively, from the terminal on macOS / Linux) and navigate to either <https://localhost:9999> or <http://localhost:9999> to get started.
 
@@ -50,11 +51,11 @@ Run the executable (double click the exe on windows or run `./stash-osx`, or `./
 
 ##### FFMPEG
 
-If stash is unable to find or download FFMPEG then download it yourself from the link for your platform:
+If Stash is unable to find or download FFMPEG then download it yourself from the link for your platform:
 
-- [macOS ffmpeg][macosffmpeg], [macOS ffprobe][macosffprobe]
-- [Windows][windowsffmpeg]
-- [Linux][linuxffmpeg]
+- [macOS ffmpeg][ffmpeg-macos], [macOS ffprobe][ffprobe-macos]
+- [Windows][ffmpeg-windows]
+- [Linux][ffmpeg-linux]
 
 The `ffmpeg(.exe)` and `ffprobe(.exe)` files should be placed in `~/.stash` on macOS / Linux or `C:\Users\YourUsername\.stash` on Windows.
 
@@ -70,14 +71,14 @@ The `ffmpeg(.exe)` and `ffprobe(.exe)` files should be placed in `~/.stash` on m
 !!! info
     Not that Stash does not currently retrieve and organize information about your entire library automatically.
 
-    You will need to help it along through the use of [scrapers][scrapers]. The Stash community has developed scrapers for many popular data sources which can be downloaded and installed from [this repository][scrapersrepo].
+    You will need to help it along through the use of [scrapers][stash-scrapers]. The Stash community has developed scrapers for many popular data sources which can be downloaded and installed from [this repository][stash-scrapers-repo].
 
 
 #### CLI
 
 Stash runs as a command-line app and local web server. There are some command-line options available, which you can see by running `stash --help`.
 
-For example, to run stash locally on port 80 run it like this (OSX / Linux): `stash --host 127.0.0.1 --port 80`
+For example, to run Stash locally on port 80 run it like this (OSX / Linux): `stash --host 127.0.0.1 --port 80`
 
 
 #### SSL (HTTPS)
@@ -88,7 +89,7 @@ Stash can run over HTTPS with some additional work. First you need to generate a
 openssl req -x509 -newkey rsa:4096 -sha256 -days 7300 -nodes -keyout stash.key -out stash.crt -extensions san -config <(echo "[req]"; echo distinguished_name=req; echo "[san]"; echo subjectAltName=DNS:stash.server,IP:127.0.0.1) -subj /CN=stash.server
 ```
 
-This command would need customizing for your environment. [This link][opensslhelp] might be useful.
+This command would need customization for your environment. [This link][openssl-selfsigned-help] might be useful.
 
 Once you have a certificate and key file name them `stash.crt` and `stash.key` and place them in the `~/.stash` directory. Stash detects these and starts up using HTTPS rather than HTTP.
 
@@ -97,19 +98,19 @@ Once you have a certificate and key file name them `stash.crt` and `stash.key` a
 
 #### Themes and CSS customization
 
-There is a [directory of community-created themes][cssthemes] on our Wiki, along with instructions on how to install them.
+There is a [directory of community-created themes][stash-themes] on our Wiki, along with instructions on how to install them.
 
-You can also make Stash's interface fit your desired style with [custom CSS snippets][csssnippets] and [CSS Tweaks][csstweaks]
+You can also make Stash's interface fit your desired style with [custom CSS snippets][stash-css-snippets].
 
 
 ### Support (FAQ)
 
-Answers to other Frequently Asked Questions can be found on our [Wiki][wiki]
+Answers to other Frequently Asked Questions can be found on our [Wiki][stash-wiki]
 
 For issues not addressed there, there are a few options:
 
 - Read this documentation ;)
 - Check the in-app documentation (using the `?` Icon in the top right corner)
-- Join the [Discord server][discord], where the community can offer further support.
+- Join the [Discord server][stash-discord], where the community can offer further support.
 
 {% include 'links.md' %}

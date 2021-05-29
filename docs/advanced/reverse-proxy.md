@@ -1,7 +1,17 @@
+---
+title: Using a reverse proxy
+summary: Explanation on how to use a reverse proxy infront of Stash.
+authors:
+    - bnkai
+    - halorrr
+    - AnTiMatteIR
+date: 2021-05-29
+---
+
 # Using a reverse proxy
 
-The use of nginx as a reverse proxy for stash is possible. 
-A sample configuration of headers that need to be set mentioned [here](https://github.com/stashapp/stash/pull/134) is 
+The use of nginx as a reverse proxy for Stash is possible. 
+A sample configuration of headers that need to be set mentioned [here][stash-github-pr-134] is 
 
 ```nginx
 location / {
@@ -14,9 +24,9 @@ location / {
 }
 ```
 
-As of commit `7767271`, if needed you can adjust the `external_host` setting to your external address as mentioned [here](https://github.com/stashapp/stash/pull/369)
+As of commit `7767271`, if needed you can adjust the `external_host` setting to your external address as mentioned [here][stash-github-pr-369]
 
-In order for the websocket to work, you may need to also add these lines to your server block (`proxy.conf` file in the Let's Encrypt Unraid docker container for instance) as mentioned [here](https://github.com/stashapp/stash/issues/532)
+In order for the websocket to work, you may need to also add these lines to your server block (`proxy.conf` file in the Let's Encrypt Unraid docker container for instance) as mentioned [here][stash-github-issue-532]
 
 ```nginx
 proxy_http_version 1.1;
@@ -24,10 +34,10 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
 
-If you are using the linuxserver letencrypt docker you can use create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
+If you are using the linuxserver letsencrypt docker you can create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
 
 ```nginx
-# make sure that your dns has a cname set for stash
+# make sure that your dns has a CNAME set for stash
 
 server {
     listen 443 ssl;
@@ -66,9 +76,9 @@ server {
 
 Another example for `nginx`:
 
-In this case we are using `stash.home` as our domain and `192.168.0.1` is stash's ip so edit accordingly.
+In this case we are using `stash.home` as our domain and `192.168.0.1` is Stash's ip so edit accordingly.
 
-The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host](https://github.com/stashapp/stash/pull/369) for more details
+The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host][stash-github-pr-369] for more details
 
 ```nginx
 server {
@@ -90,3 +100,6 @@ server {
     }
 }
 ```
+
+
+{% include 'links.md' %}

@@ -23,11 +23,13 @@ theme:
     - navigation.sections
 
 plugins:
+  - search
   - macros:
       include_dir: include
 
 markdown_extensions:
   - admonition
+  - attr_list
   - toc:
       permalink: 🔗
   - pymdownx.details
@@ -36,29 +38,32 @@ markdown_extensions:
 nav:
     - Getting started: index.md
     - Development: development.md
+    # WIP
+    #- Getting started:
+    #  - Initial setup: getting-started/setup.md
     - Installation:
       - Synology NAS: installation/synology_nas.md
       - UNRAID: installation/unraid.md
     - Customization:
-      - CSS Snippets: customization/css_snippets.md
+      - CSS snippets: customization/css-snippets.md
       - Themes:
         - Overview: customization/themes/overview.md
-        - Pulsar theme: customization/themes/theme_pulsar.md
-        - Night theme: customization/themes/theme_night.md
-        - Plex theme: customization/themes/theme_plex.md
+        - Pulsar theme: customization/themes/theme-pulsar.md
+        - Night theme: customization/themes/theme-night.md
+        - Plex theme: customization/themes/theme-plex.md
       - Plugins & Scripts:
         - Plugins: customization/plugins-scripts/plugins.md
         - Scripts: customization/plugins-scripts/scripts.md
     - Advanced:
-      - Comand line options: advanced/cli_options.md
-      - Exclude files from stash: advanced/exclude_files.md
-      - Reverse proxy: advanced/reverse_proxy.md
+      - Comand line options: advanced/cli-options.md
+      - Exclude files from stash: advanced/exclude-files.md
+      - Reverse proxy: advanced/reverse-proxy.md
     - Database:
-      - Backup & Restore: database/backup_restore.md
-      - Import CSV: database/import_csv.md
-      - Edit manually: database/edit_manually.md
+      - Backup & Restore: database/backup-restore.md
+      - Import CSV: database/import-csv.md
+      - Edit manually: database/edit-manually.md
     - Troubleshooting:
-      - Video playback issues: troubleshooting/video_playback_issues.md
+      - Video playback issues: troubleshooting/video-playback.md
     - API:
       - Reference: api/reference.md
-      - JSON specification: api/json_specification.md
+      - JSON specification: api/json-specification.md

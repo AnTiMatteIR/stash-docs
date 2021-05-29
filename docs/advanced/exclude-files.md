@@ -1,3 +1,13 @@
+---
+title: Exclude files from stash
+summary: Explanation on how to exclude files or directories from stash.
+authors:
+    - bnkai
+    - victorhooi
+    - AnTiMatteIR
+date: 2021-05-29
+---
+
 # Exclude files from stash
 
 Given a valid [regex](https://github.com/google/re2/wiki/Syntax), files that match even partially are excluded during the Scan process and are not entered in the database.Also during the Clean task if these files exist in the DB they are removed from it and their generated files get deleted.
@@ -29,4 +39,7 @@ and thats how it looks if you use UI (notice the difference for the `\` characte
 
 ![regexUI](https://i.imgur.com/3Oqvuja.png)
 
-_a useful [link](https://regex101.com/?flavor=golang) to experiment with regexps (We use "Golang" as the regex flavour)_
+_a useful [link][regex101] to experiment with regexps (We use "Golang" as the regex flavour)_
+
+
+{% include 'links.md' %}
